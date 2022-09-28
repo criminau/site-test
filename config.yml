@@ -1,0 +1,126 @@
+baseURL: 'https://criminau.xyz/'
+relativeURLs: true
+uglyURLs: true
+title: "Journal Subversif"
+paginate: 7
+languageCode: fr-FR
+DefaultContentLanguage: fr
+enableInlineShortcodes: true
+theme: theme-1
+
+enableRobotsTXT: false
+buildFuture: false
+buildExpored: false
+buildDraft: true
+
+# Performance
+minify:
+ minifyOutput: false
+
+# Preparing search option
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - RSS
+
+#LiveReload Hugoreload
+disableLiveReload: true
+
+params:
+  author: "criminau"
+  description: 'Criminau est un blog développant un avis critique de nos sociétés et de notre environnement social. Les articles abordent une culture subversive.'
+  keyword: 'criminau.xyz, criminau, criminel, blog, pour, entretenir, votre, culture, subversive'
+  images:
+    - android-chrome-192x192.png
+  ShowReadingTime: true
+  imagesdefault: 'android-chrome-192x192.png'
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowReadingTime: true
+  RSSauthor: "criminau"
+  copyright: 'https://criminau.xyz/internetlibre.txt'
+  enableSearch: true
+  DateFormat: 2 January, 2006
+  disableThemeToggle: false
+  defaultTheme: auto
+  emptycover: 'media/sky-cover.avif'
+  label:
+    icon: apple-touch-icon.png
+
+# Environnement
+  env: production
+  cover:
+    linkFullImages: true
+
+  HomeInfoParams:
+    Title: "Bonjour 👋"
+    Content: "Journal Subversif."
+    Tagline: "Qui tacet consentire videtur."
+
+  socialIcons:
+    - name: "RSS"
+      url: 'https://criminau.xyz/index.xml'
+    - name: "Github"
+      url: 'https://github.com/criminau/site'
+
+sitemap:
+  changefreq: dayly
+  filename: sitemap.xml
+  priority: 0.8
+
+# PaperMod Menu
+menu:
+  main:
+    - name: Archives
+      url: /archives/
+      weight: 1
+    - name: A propos
+      url: /apropos/
+      weight: 2
+
+# SEO
+permalinks:
+  posts: /articles/:slug/
+
+# Taxonomies
+taxonomies:
+  tag: Tags
+  category: Thème
+  serie: Série
+  
+# RSS feed
+rsslimit: 20
+
+# Emoji support
+enableEmoji: true
+
+# Allow raw html in markdown file
+# Goldmark is good for render-link.html but bad for custom footnote-return ..
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: true
+    disable: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+  twitter:
+    disable: false
+    enableDNT: true
+    simple: true
+  vimeo:
+    disable: false
+    enableDNT: true
+    simple: true
+  youtube:
+    disable: false
+    privacyEnhanced: true
