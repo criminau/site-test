@@ -1,4 +1,4 @@
-baseURL: 'https://criminau.xyz/'
+baseURL: 'https://site-test-criminau.netlify.app/'
 relativeURLs: true
 uglyURLs: true
 title: "Journal Subversif"
