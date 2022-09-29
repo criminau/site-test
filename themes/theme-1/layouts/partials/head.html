@@ -1,32 +1,24 @@
 <!-- <Head> -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
 <!-- Title -->
-<title>
-{{ if .IsHome }}{{ .Site.Title }} | {{ .Site.Params.HomeInfoParams.Tagline }}{{else}}
-{{ if .Title }}{{ .Title }}{{ end }}{{end}}
-</title>
+<title>{{ if .IsHome }}{{ .Site.Title }} | {{ .Site.Params.HomeInfoParams.Tagline }}{{else}}{{ if .Title }}{{ .Title }}{{ end }}{{end}}</title>
 <!-- Balises Meta -->
 <!-- Meta robots -->
 <meta name="robots" content="index,follow"/>
 <meta name="robots" content="all"/>
 <meta name="googlebot" content="index,follow">
-
 <!-- Meta ? -->
 <meta name="referrer" content="no-referrer">
-
 <!-- Microsoft Tiles -->
 <meta name="msapplication-config" content="browserconfig.xml">
-
 <!-- Meta Apple -> To run web application in full-screen  -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
 <!-- Meta hreflang -->
 <link rel="alternate" hreflang="fr-be" href="{{ .Permalink }}"/>
 <link rel="alternate" hreflang="fr-fr" href="{{ .Permalink }}"/>
 <link rel="alternate" hreflang="fr-ch" href="{{ .Permalink }}"/>
-
 <!-- Meta Simple -->
 {{- if in site.Params.mainSections .Type }}
 <meta name="description" content="{{ .Summary | plainify | truncate 180 | safeHTML }}">
@@ -88,10 +80,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" type="application/manifest+json" href="/site.webmanifest">
-
 <!-- Generator -->
 {{- hugo.Generator }}
-
 <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}index.xml" title="criminau.xyz">
 

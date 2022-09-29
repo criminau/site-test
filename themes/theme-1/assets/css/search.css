@@ -1,16 +1,17 @@
 /* Search
 --------------------------------------------------------------------- */
 /* insertion de la barre de recherche dans le menu */
-#search-form {
-    
+li #search-form{
+    width: 10em;
 }
-#search-input {
-    max-height: calc(var(--header-height)-var(--gap-height));
+
+#search-input{
 	border: var(--border-width) solid var(--content);
-	padding-right: var(--gap-height);
-	border-radius: var(--radius);
+	padding-right: var(--gap-small);
+	border-radius: calc(var(--radius)/2);
 	text-align: right;
 	color: var(--content);
+    width: 100%;
 }
 #search-input::placeholder {
 	color: var(--content);

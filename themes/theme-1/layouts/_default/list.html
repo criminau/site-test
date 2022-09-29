@@ -1,37 +1,30 @@
 {{- define "main" }}
 
-{{- if not .IsHome | and .Title }}
-<header class="page-header">
-  <h1>{{ .Title }}</h1>
-</header>
-{{- end }}
-
-{{- $pages := union .RegularPages .Sections }}
-
-{{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- end}}
-
+{{ $pages := union .RegularPages .Sections }}
+{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ $paginator := .Paginate $pages }}
 {{ $term := .Data.Term}}
-{{- range $index, $page := $paginator.Pages }}
 
-{{- $class := "post-entry" }}
-{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0)) }}
-{{- if .Site.Params.homeInfoParams | or .Site.Params.disableSpecial1stPost}}
+
+{{ if (and $.IsHome (.Site.Params.homeInfoParams) (eq $paginator.PageNumber 1)) }}
 {{- partial "home_info.html" . }}
-{{- else}}
-{{- $class = "first-entry" }}
-{{- end }}
-{{- else if $term }}
-{{- $class = "post-entry tag-entry" }}
-{{- end }}
+{{ end }}
+
+<p class="introducart">
+	{{ $n := len $pages }}
+	{{ $n }} articles
+	{{ partial "pagination.html" $paginator }}
+</p>
+
+{{ range $page := $paginator.Pages }}
+{{ $class := "post-entry" }}
 
 <article class="{{ $class }}" role="article">
   
-    <!--- image schema article -->
+    <div class="post-entry-content-left">
 		{{- partial "cover.html" (dict "cxt" . "IsHome" true) }}
-
+	</div>
+	
 	<div class="post-entry-content-right">
 		<header class="entry-header">
 			<h2>
@@ -66,16 +59,14 @@
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
+  <div class="pagination">
     {{- if $paginator.HasPrev }}
     <a class="prev" rel="prev" href="{{ $paginator.Prev.URL }}" title="Page Précédente" >« Page Précédente</a>
     {{- end }}
     {{- if $paginator.HasNext }}
     <a class="next"  rel="next" href="{{ $paginator.Next.URL }}" title="Page Suivante">Page Suivante »</a>
     {{- end }}
-  </nav>
-</footer>
+  </div>
 {{- end }}
 
 

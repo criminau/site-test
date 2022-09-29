@@ -1,23 +1,3 @@
-/* Main
--------------------------------------------------- */
-.main {/*
-    position: relative;/*
-    min-height: 50vh;
-    max-width: var(--main-width);
-    margin: left;*/
-    padding: var(--gap);
-}
-@media screen and (max-width: 400px) {
-    .main {
-        min-height: calc(100vh - var(--header-height) - var(--footer-height) - 24px);
-    }
-}
-.page-header {
-    margin-bottom: 24px;
-}
-.page-header h1 {
-    font-size: 40px;
-}
 /* Add css tricks
 ------------------------------------------------------------------------- */
 .flex{
@@ -44,57 +24,61 @@
 .float-right{
     float:right;
 }
-/* Header
+/* Navigation
 -------------------------------------------------- */
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: var(--gap-height);
+.nav{
+    margin-top: var(--gap-small);
+    margin-bottom: 0;
+    font-size: var(--font-size-menu);
 }
-/** logo **/
-.nav .logo {
-    font-size: var(--font-size-menu);/*24px*/
-    margin-left: var(--gap-width);
-    display: flex;
-    flex-wrap: inherit;
+.nav ul{
+    display: inline-flex;
+    justify-content: flex-start;
+	flex-wrap: wrap;
+    row-gap: var(--gap-small);
 }
-.nav .logo a {
-    font-weight: 700;
+.nav li{
+    margin-left: var(--gap);
+    align-items: first baseline;
 }
-.nav .logo a img {
-    display: inline;
+.logo{
     vertical-align: middle;
-    pointer-events: none;
-    border-radius: var(--radius);
-    width: 1.33vw;
-    height: 1.33vw;
+    border-radius: calc(var(--radius)/2);
+    width: 1.33em;
+    height: 1.33em;
 }
-.nav .logo a:hover {
+.nav .logo:hover {
   transform:rotate(25deg);
   -ms-transform:rotate(25deg);
   -webkit-transform:rotate(25deg);
 }
-/*** theme-toggle ***/
-.nav .logo .theme-toggle {
-    margin-left: var(--gap-width); /*gap 24px */
-    display: inline;
-    vertical-align: middle;
+/** theme-toggle **/
+.nav .theme-toggle{
+    margin-left: var(--gap); /*gap 24px*/
     cursor: pointer;
-    width: 1.33vw;
-    height: 1.33vw;
+    width: 1.33em;
+    height: 1.33em;
 }
-.nav .logo .theme-toggle:hover{
+.nav .theme-toggle:hover{
   transform:rotate(-25deg);
   -ms-transform:rotate(-25deg);
   -webkit-transform:rotate(-25deg);
 }
-.nav .logo .theme-toggle svg {
-    display: inline;
+/* page menu */
+.nav a:hover{
+    font-weight: bold;
+    color: var(--content);
+}
+.nav a .active {
+    font-weight: 500;
+    border-bottom: calc(var(--border-width)*2) solid currentColor;
+}
+#theme-toggle svg{
     vertical-align: middle;
     pointer-events: none;
-
+    width: 1.33em;
+    height: 1.33em;
 }
-
 body.dark #moon {
     vertical-align: middle;
     display: none;
@@ -103,40 +87,16 @@ body:not(.dark) #sun {
     display: none;
 }
 
-/** menu **/
-.nav .menu {
-    font-size: var(--font-size-menu);
-    display: flex;
-    flex-wrap: inherit;
-    list-style: none;
-}
-.nav .menu li{
-    margin-left: var(--gap-width);
-    vertical-align: middle;
-    text-align: center;
-}
-.nav .menu li a {
-    vertical-align: middle;
-}
-.nav .menu a:hover{
-    font-weight: bold;
-    color: var(--content);
-}
-.nav .menu li a .active {
-    font-weight: 500;
-    border-bottom: calc(var(--border-width)*2) solid currentColor;
-}
-
 /* Footer
 -------------------------------------------------- */
 .footer {
-    margin-top: var(--gap-height); /*8px*/
-    margin-bottom: var(--gap-height); /*8px*/
+    margin-top: var(--gap-small); /*8px*/
+    margin-bottom: var(--gap-small); /*8px*/
     color: var(--content);
     font-size: var(--font-size-classic); /*14px*/
 }
 .footer span {
-    margin-left: var(--gap-width); /*24px*/
+    margin-left: var(--gap); /*24px*/
 }
 .footer a {
     color: inherit;
@@ -159,12 +119,12 @@ body:not(.dark) #sun {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    bottom: 7.453vh; /*60px*/
-    right: 1.562vw; /*30px*/
+    bottom: 3.124em; /*60px*/
+    right: 1.562em; /*30px*/
     z-index: 99;
     background: var(--content);
-    width: 2.18vw; /*42px 2.18*/
-    height: 2.18vw; /*42px*/
+    width: 2.18em; /*42px 2.18*/
+    height: 2.18em; /*42px*/
     padding: var(--radius); /*12px;*/
     color: var(--theme);
     border-radius: calc(var(--radius)*8); /*64px;*/
@@ -172,26 +132,13 @@ body:not(.dark) #sun {
     fill-opacity: 80%;
     transition: visibility 0.5s,
     opacity 0.8s linear;
-        display: inline;
-    vertical-align: middle;
     cursor: pointer;
 }
 .top-link svg{
-    width: 1.33vw;
-    height: auto;
+    width: 1.33em;
+    height: 1.33em;    
 }
 .top-link:hover{
-    width: 2.5vw; /*48px*/
-    height: 2.5vw;
-    padding: var(--radius);
-    display: inline;
-    vertical-align: middle;
-    cursor: pointer;
-}
-/* Mobile
------------------------------------------------------ */
-@media screen and (max-width: 500px) {
-    .top-link {
-      /*bottom: 110px;*/
-    }
+    width: 3em; /*42px 2.18*/
+    height: 3em; /*42px*/
 }

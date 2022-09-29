@@ -1,27 +1,29 @@
 /* Theme
 -------------------------------------------------- */
 :root {
-    --gap: 24px; /*24px*/
-    --gap-width: 1.5vw; /*24px*/
-    --gap-height: 0.416vw; /*8px*/
-    --content-gap: 20px;
+    --gap: 1.5em; /*24px*/
+    --gap-small: 0.416em; /*8px*/
+    --content-gap: 20px; /*20px*/
     --nav-width: 100%;
-    --main-width: 70%;
-    --radius: 0.416vw; /*8px*/
-    --border-width: 0.05208vw; /*1px*/
-
+    --main-width: 70%; /*70%*/
+    --radius: 0.41664em; /*8px*/
+    --border-width: 0.05208em; /*1px*/
+    
     --theme: #D3D3D3;
     --content: rgb(0,43,85);
     --code-bg: #1c1d21;
     --hljs-bg: #1c1d21;
     --hljs-color: rgb(204,204,204);
-    --font-size-classic: 0.888vw;
-    --font-size-menu: 1.33vw;
+    --font-size-classic: 0.888em;
+    --font-size-menu: 1.33em;
+    
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
     :root {
-     /*   --gap: 14px;*/
+        --main-width: auto;
+        --gap: 1em; /*14px*/
+        
     }
 }
 

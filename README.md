@@ -21,11 +21,12 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [ ] css page de texte
 - [ ] css page d'accueil.
 - [ ] responsive footer. (à vérifier)
-- [ ] responsive button footer.
+- [ ] responsive button footer (à vérifier)
 - [ ] responsive nav. (à vérifier)
+- [ ] introducart (à vérfier)
 - [ ] responsive home-info
 - [ ] home-info.html
-- [ ] introduction font-size (vw) + css (en cours)
+- [ ] font-size (em) + css (en cours)
 - [ ] bouton partager. section "partage" !
 - [ ] iteroni vidéo iframe
 - [ ] nitter tweet iframe ? citation.
@@ -34,7 +35,7 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [ ] préparation section : note ?
 - [ ] long cache 
 - [X] Retour en haut de la page, optimisation et esthétique. (ok à tester + seo)
-- [X] CSS menu (à tester)
+
 - [ ] css mobile (homepage+page de texte+searchpage with term.
 - [*] schema article : author + image(ok) + headline. post single. [A confirmer]
 -- image (ok)

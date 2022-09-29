@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="{{ .Site.Language }}" dir="auto">
-
+<html lang="{{ .Site.Language }}">
 
 <head>
     {{- partial "head.html" . }}
@@ -10,14 +9,11 @@
 <body class="{{ if (and (eq .Kind `page` ) (ne .Layout `archives`)) }}single{{ else }}list
         {{- if .IsHome }} home{{ end }}{{ end }}{{- if eq $.Site.Params.defaultTheme `dark` }} dark{{ end }}">
 
-    {{- partial "header.html" . .Page}}
+    {{- partial "nav.html" . .Page}}
     
-    <main class="main">
         {{- block "main" . }}
         {{- end }}
-    </main>
 
     {{- partial "footer.html" . .Page }}
 </body>
-
 </html>

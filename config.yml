@@ -2,7 +2,7 @@ baseURL: 'https://site-test-criminau.netlify.app/'
 relativeURLs: true
 uglyURLs: true
 title: "Journal Subversif"
-paginate: 7
+paginate: 8
 languageCode: fr-FR
 DefaultContentLanguage: fr
 enableInlineShortcodes: true
