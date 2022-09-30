@@ -3,9 +3,9 @@
 :root {
     --gap: 1.5em; /*24px*/
     --gap-small: 0.416em; /*8px*/
-    --content-gap: 20px; /*20px*/
+    --content-gap: 1.0416em; /*20px*/
     --nav-width: 100%;
-    --main-width: 70%; /*70%*/
+    --main-width: 47.92em; /*70%*/ /*520px = 27.08em / 720px = 37,5em 920px = 47.91em */
     --radius: 0.41664em; /*8px*/
     --border-width: 0.05208em; /*1px*/
     

@@ -14,12 +14,12 @@
 
 {{ else if (and .Params.cover.image .Params.cover.alt) }}
 
+{{- if $addLink }}
+<a title="{{ $alt }}" rel="noopener noreferrer" href="{{ (.Params.cover.image) | absURL }}" target="_blank">
+{{ end -}}
 {{- if $alt }}
 <img itemprop="image" title="{{ $alt }}" src="{{ (.Params.cover.image) | absURL }}" height="15.625em"
 	 width="15.625em" alt="{{ $alt }}" >
-{{- if $addLink }}
-<a class="entry-link-img-post-cover" title="{{ $alt }}" rel="noopener noreferrer" href="{{ (.Params.cover.image) | absURL }}" target="_blank">
-{{ end -}}
 {{- end }}
 	
 {{- if $addLink }}</a>{{ end -}}

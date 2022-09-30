@@ -1,5 +1,13 @@
 /* Archive
 -------------------------------------------------- */
+.page-header{
+    margin: var(--gap);
+    width: var(--main-width);
+}
+.archive-list-main{
+    margin: var(--gap);
+    width: var(--main-width);
+}
 .archive-posts {
     width: 100%;
     font-size: 0.88rem; /* 16px*/

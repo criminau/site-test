@@ -13,30 +13,33 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 ### V.02.9
 
 - [X] correction article (+PDF)
-- [X] clear and developp cover and sky-cover.
-- [X] archetypes default.md
-- [ ] cleaning pagination + new one (homepage) (à vérifier)
-- [ ] SEO width and weight of image. ??
+- [X] correction, développement et optimisation (html+css) cover and sky-cover.
+- [X] archetypes default.md.
+- [X] nettoyage (code+css) pagination + une en haut de la page d'accueil.
+- [X] SEO width and weight of image.
+- [X] Retour en haut de la page, optimisation et esthétique.
+- [X] cache policy (90j).
+- [X] css page d'accueil.
+- [X] responsive footer.
+- [X] responsive button footer.
+- [X] responsive nav.
+- [X] introducart.
+- [X] responsive et correction du html home-info.
+- [X] responsive search.
+- [X] préparation des thèmes, tags et séries.
+
 - [ ] .Params.image ??
 - [ ] clear markdown syntax
 - [ ] css page de texte
-- [ ] css page d'accueil (à vérifier)
-- [ ] responsive footer. (à vérifier)
-- [ ] responsive button footer (à vérifier)
-- [ ] responsive nav. (à vérifier)
-- [ ] introducart (à vérfier)
-- [ ] responsive home-info (à vérifier)
-- [X] home-info.html
+- [ ] css archives (à vérifier)
 - [ ] font-size (em) + css (en cours)
 - [ ] bouton partager. section "partage" !
 - [ ] iteroni vidéo iframe
-- [ ] nitter tweet iframe ? citation.
+- [ ] nitter tweet iframe ? citation
 - [ ] Opt out FLoC ??
-- [X] préparation des thèmes, tags et séries.
+- [ ] s'engager dans les outils de recherche et d'affichage des taxonomies
 - [ ] préparation section : note ?
-- [X] Retour en haut de la page, optimisation et esthétique. (à vérifier + seo)
-- [ ] cache policy maj (à vérifier)
-- [ ] css mobile (homepage+page de texte+searchpage with term.
+- [ ] site responsive avec css mobile (720/1320)
 - [*] schema article : author + image(ok) + headline. post single. [A confirmer]
 -- image (ok)
 <meta itemprop="image" content="/some/url/to/an/image.gif" /> (si besoin)

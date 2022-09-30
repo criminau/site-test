@@ -4,6 +4,8 @@
   <h1>{{ .Title }}</h1>
 </header>
 
+<div class="archive-list-main">
+	
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- range $pages.GroupByPublishDate "2006" }}
 {{- if ne .Key "0001" }}
@@ -36,5 +38,7 @@
 </div>
 {{- end }}
 {{- end }}
+
+</div>
 
 {{- end  }}{{/* end main */}}

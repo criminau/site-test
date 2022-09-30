@@ -1,87 +1,94 @@
 /* Post single
 -------------------------------------------------- */
-/* header */
+.post-single{
+    margin: var(--gap);
+    width: var(--main-width);
+}
+
+/** header **/
 .post-header {
     margin-bottom: var(--gap);
+    display: flex;
+    flex-direction: column;
 }
 .post-title {
-    margin-bottom: var(--gap);
-    font-size: 35px;
+    font-size: 1.8229em; /* 35px;*/
     color: var(--content);
 }
-.post-meta {
+.post-meta{
     color: var(--content);
-    font-size: var(--font-size-classic); /*1'px*/
+    font-size: var(--font-size-classic); /*14px*/
     display: flex;
     flex-wrap: wrap;
+    margin-top: var(--gap-small);
 }
 .post-meta a{
     color: var(--content);
-    font-size: 14px;
+    font-size: var(--font-size-classic); /*14px*/
     display: flex;
     flex-wrap: wrap;
+}
+.post-meta a.pdf-link-post-single:hover{
+    font-weight: bold;
 }
 .post-meta .i18n_list li {
     display: inline-flex;
     list-style: none;
-    margin: auto 3px;
-    box-shadow: 0 1px 0 var(--content);
+    margin: auto calc(var(--gap)/3); /*3px*/
+    box-shadow: 0 var(--border-width) 0 var(--content);
 }
 
-/** cover */
+/** cover **/
 .post-single img{
-    box-shadow: 0 1px 0 var(--content);
+    box-shadow: 0 var(--border-width) 0 var(--content);
     margin-bottom: var(--gap);
     text-align: center;
     vertical-align: center;
     border-radius: var(--radius);
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 15.625em; /*15.625vw */
+    max-width: 15.625em;
     width: auto;
     height: auto;
 }
-.entry-link-img-post-cover{
-    
-}
 .cover-caption{
-  font-size: 14px;
+  font-size: 0.7291em; /*14*/
   color: var(--content);
 }
 /** end cover */
 
 .post-content {
-    color: var(--content);
+    width: 100%;
 }
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    margin: 24px 0 16px 0;
+    margin: 1.25em 0 0.833em 0; /*24px 0 16px 0*/
 }
 .post-content h1 {
-    margin: 40px auto 32px auto;
-    font-size: 40px;
+    margin: 2.083em auto 1.666em auto; /*40px auto 32px auto */
+    font-size: 2.083em;
 }
 .post-content h2 {
-    margin: 32px auto 24px auto;
-    font-size: 32px;
-    margin-left: 1%;
+    margin: 1.666em auto 1.25em auto; /* 32px auto 24px auto */
+    font-size: 1.666em; /*32px*/
+    margin-left: 1%; /* 1 ??*/
 }
 .post-content h3 {
-    font-size: 24px;
-    margin-left: 2%;
+    font-size: 1.25em; /*24px*/
+    margin-left: 2%; /*2% ??*/
 }
 .post-content h4 {
-    font-size: 16px;
-    margin-left: 3%;
+    font-size: 0.833em; /*16px*/
+    margin-left: 3%; /*3% = 3em */
 }
 .post-content h5 {
-    font-size: 14px;
-    margin-left: 4%;
+    font-size: 0.7291em; /*14*/
+    margin-left: 4%;  /*4%*/
 }
 .post-content h6 {
-    font-size: 12px;
-    margin-left: 4%;
+    font-size: 0.625em; /*12px*/
+    margin-left: 4%; /*4%*/
 }
 /* liens dans le contenu des articles, soulignage*/
 .post-content p a {
@@ -92,21 +99,22 @@
     font-weight: bolder;
 }
 /* ET (en plus) sur tablette ou smartphone, ajout d'un espace -> Tap targets are not sized appropriately */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 630em) {/*700px*/
 .post-content p a{
-    padding-bottom: 8px;
+    padding-bottom: 0.4166em; /*8px*/
 }
 }
 
 .post-content a code {
     margin: auto 0;
     border-radius: 0;
-    box-shadow: 0 -1px 0 var(--content) inset;
+    box-shadow: 0 calc(var(--border-width)*(-1)) 0 var(--content) inset;
 }
 
 .post-content del {
     text-decoration: none;
     background: linear-gradient(to right, var(--content) 100%, transparent 0) 0 50% / 1px 1px repeat-x;
+    background-color: red;
 }
 
 .post-content p,
@@ -118,11 +126,11 @@
 
 .post-content ul,
 .post-content ol {
-    padding-inline-start: 20px;
+    padding-inline-start: 1.0416em; /*20px*/
 }
 
 .post-content li {
-    margin-top: 5px;
+    margin-top: 0.2604em;/*5px*/
 }
 .post-content li a{
     text-decoration: underline;
@@ -149,17 +157,17 @@
 .post-content dd {
     width: 75%;
     margin-inline-start: 0;
-    padding-inline-start: 10px;
+    padding-inline-start: 0.5208em; /*10px*/
 }
 
 .post-content dt~dt,
 .post-content dd~dd {
-    margin-top: 10px;
+    margin-top: 0.5208em; /*10px*/
 }
 
 .post-content table {
-    margin-bottom: 32px;
-    margin-top: 32px;
+    margin-bottom: 1.666em; /*32px;*/
+    margin-top: 1.666em; /*32px;*/
     border-collapse: collapse;
     border-spacing: 0;
     empty-cells: show;
@@ -169,14 +177,14 @@
 
 .post-content table th,
 .post-content table:not(.highlighttable) td {
-    min-width: 80px;
-    padding: 12px 8px;
+    min-width: 4.166em; /*80px;*/
+    padding: 0.625em 0.416em;/*12px 8px*/
     line-height: 1.5;
-    border: 1px solid var(--content);
+    border: var(--border-width) solid var(--content);
 }
 
 .post-content table th {
-    font-size: 14px;
+    font-size: 0.7291em; /*14*/
     text-align: start;
 }
 
@@ -185,10 +193,11 @@
 }
 
 .post-content .highlight,
-.post-content pre {
-    margin: auto calc(var(--gap) * -1) 32px calc(var(--gap) * -1);
+.post-content pre {/*
+    margin: auto calc(var(--gap) * -1) 32px calc(var(--gap) * -1);*/
     background: var(--hljs-bg) !important;
     border-radius: var(--radius);
+    margin: calc(var(--gap)/2);
 }
 
 .post-content li>.highlight {
@@ -209,7 +218,7 @@
 }
 
 .post-content .highlighttable td:first-child {
-    width: 40px;
+    width: 2.0833em;/*40px*/
 }
 
 .post-content .highlighttable td .linenodiv {
@@ -230,13 +239,13 @@
     background: transparent !important;
 }
 .post-content code {
-    margin: auto 4px;
-    padding: 4px 6px;
+    margin: auto 0.2083em;/*4px*/
+    padding: 0.2083em 0.3125em; /*4px 6px*/
     font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
     font-size: 0.78em;
     line-height: 1.5;
     background: var(--code-bg);
-    border-radius: 2px;
+    border-radius: calc(var(--radius)/4); /*2px*/
     color: var(--hljs-color);
 }
 .post-content pre code {
@@ -558,4 +567,8 @@ a.footnote-return:hover {
       padding: 1px;
       text-align: left;
   }
+}
+/* mobile */
+@media screen and (max-width: 630px) {
+
 }
