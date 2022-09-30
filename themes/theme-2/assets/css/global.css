@@ -27,8 +27,7 @@
 /* Navigation
 -------------------------------------------------- */
 .nav{
-    margin-top: var(--gap-small);
-    margin-bottom: 0;
+    margin: var(--gap-small) var(--gap) 0 var(--gap);
     font-size: var(--font-size-menu);
 }
 .nav ul{
@@ -38,7 +37,7 @@
     row-gap: var(--gap-small);
 }
 .nav li{
-    margin-left: var(--gap);
+    margin-right: var(--gap);
     align-items: first baseline;
 }
 .logo{
@@ -54,7 +53,6 @@
 }
 /** theme-toggle **/
 .nav .theme-toggle{
-    margin-left: var(--gap); /*gap 24px*/
     cursor: pointer;
     width: 1.33em;
     height: 1.33em;
@@ -90,13 +88,11 @@ body:not(.dark) #sun {
 /* Footer
 -------------------------------------------------- */
 .footer {
-    margin-top: var(--gap-small); /*8px*/
-    margin-bottom: var(--gap-small); /*8px*/
+    margin: var(--gap-small) var(--gap) var(--gap-small) var(--gap);
     color: var(--content);
     font-size: var(--font-size-classic); /*14px*/
 }
 .footer span {
-    margin-left: var(--gap); /*24px*/
 }
 .footer a {
     color: inherit;
@@ -107,6 +103,9 @@ body:not(.dark) #sun {
 }
 .tl2{
     cursor: pointer;
+    display: inline-flex;
+    color: inherit;
+    border-bottom: var(--border-width) solid var(--content);
 }
 .tl2:hover {
     font-weight: bolder;
@@ -141,4 +140,11 @@ body:not(.dark) #sun {
 .top-link:hover{
     width: 3em; /*42px 2.18*/
     height: 3em; /*42px*/
+}
+
+/* mobile */
+@media screen and (max-width: 630px) {
+    .top-link{
+        bottom: 5em;
+    }
 }

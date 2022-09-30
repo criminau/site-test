@@ -9,12 +9,14 @@
 
 {{ if (and $.IsHome (eq .Params.cover.image .Params.cover.alt "")) }}
 
-<img itemprop="image" title="article sans image" src="{{ (.Site.Params.emptycover) | absURL }}" alt="article sans image" >
+<img itemprop="image" title="article sans image" src="{{ (.Site.Params.emptycover) | absURL }}" height="15.625em"
+	 width="15.625em" alt="article sans image" >
 
 {{ else if (and .Params.cover.image .Params.cover.alt) }}
 
 {{- if $alt }}
-<img itemprop="image" title="{{ $alt }}" src="{{ (.Params.cover.image) | absURL }}" alt="{{ $alt }}" >
+<img itemprop="image" title="{{ $alt }}" src="{{ (.Params.cover.image) | absURL }}" height="15.625em"
+	 width="15.625em" alt="{{ $alt }}" >
 {{- if $addLink }}
 <a class="entry-link-img-post-cover" title="{{ $alt }}" rel="noopener noreferrer" href="{{ (.Params.cover.image) | absURL }}" target="_blank">
 {{ end -}}

@@ -6,7 +6,7 @@ paginate: 8
 languageCode: fr-FR
 DefaultContentLanguage: fr
 enableInlineShortcodes: true
-theme: theme-1
+theme: theme-2
 
 enableRobotsTXT: false
 buildFuture: false

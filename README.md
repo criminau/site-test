@@ -15,17 +15,18 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [X] correction article (+PDF)
 - [X] clear and developp cover and sky-cover.
 - [X] archetypes default.md
+- [ ] cleaning pagination + new one (homepage) (à vérifier)
 - [ ] SEO width and weight of image. ??
 - [ ] .Params.image ??
 - [ ] clear markdown syntax
 - [ ] css page de texte
-- [ ] css page d'accueil.
+- [ ] css page d'accueil (à vérifier)
 - [ ] responsive footer. (à vérifier)
 - [ ] responsive button footer (à vérifier)
 - [ ] responsive nav. (à vérifier)
 - [ ] introducart (à vérfier)
-- [ ] responsive home-info
-- [ ] home-info.html
+- [ ] responsive home-info (à vérifier)
+- [X] home-info.html
 - [ ] font-size (em) + css (en cours)
 - [ ] bouton partager. section "partage" !
 - [ ] iteroni vidéo iframe
@@ -33,9 +34,8 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [ ] Opt out FLoC ??
 - [X] préparation des thèmes, tags et séries.
 - [ ] préparation section : note ?
-- [ ] long cache 
-- [X] Retour en haut de la page, optimisation et esthétique. (ok à tester + seo)
-
+- [X] Retour en haut de la page, optimisation et esthétique. (à vérifier + seo)
+- [ ] cache policy maj (à vérifier)
 - [ ] css mobile (homepage+page de texte+searchpage with term.
 - [*] schema article : author + image(ok) + headline. post single. [A confirmer]
 -- image (ok)
@@ -43,7 +43,9 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 -- author (ok)
 -- headline(titre) (ok)
 - [ ]
-- [ ] clear css
+- [ ] clear css (end)
+- [ ] clear html (en cours)
+
 
 - homepage : affichage des catégories mais pas des tags ? oui CSS
 Thèmes -> categories
