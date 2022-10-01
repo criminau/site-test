@@ -1,10 +1,10 @@
 /* script.js (tous le javascript du site en bas du site pour ne rien omettre)*/
 
-/****   Bouton copier/coller dans le code des articles
+/*   Bouton copier/coller dans le code des articles
    Thanks! to :
 https://www.fiznool.com/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-powered-blog/
    Fonctionnement : cf voir markdownsyntax.md
------------------------------------------------------------------------------------------------ ****/
+--------------------------------------------------------------------------------------------------*/
 (function() {
     'use strict';
 
@@ -53,31 +53,13 @@ https://www.fiznool.com/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-p
     var highlightBlocks = document.getElementsByClassName('highlight');
     Array.prototype.forEach.call(highlightBlocks, addCopyButton);
 })();
-
-
-/**** bouton copier/coller le lien de la page 
--------------------------------------------------- ****/
-function Copy() 
-    {
-        var inputc = document.body.appendChild(document.createElement("input"));
-        inputc.value = window.location.href;
-        inputc.focus();
-        inputc.select();
-        document.execCommand('copy');
-        inputc.parentNode.removeChild(inputc);
+/***** FIN Bouton copier/coller */
+/***** Bouton Retour Haut de la page */
+window.onload = function() {
+    if (localStorage.getItem("menu-scroll-position")) {
+        document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
     }
-
-
-/*** bouton (ancien lien dans le pied de page)
---------------------------------------------------  ***/
-var mybutton = document.getElementById("tl2");
-mybutton.onclick = function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }
-
-/**** Boutons Retour Haut de la page
--------------------------------------------------- ****/
 var mybutton = document.getElementById("top-link");
 window.onscroll = function() {
     if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
@@ -91,4 +73,6 @@ window.onscroll = function() {
 mybutton.onclick = function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+    window.location.hash = ''
 }
+/***** FIN bouton haut de page */

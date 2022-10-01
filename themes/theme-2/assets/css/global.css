@@ -19,7 +19,7 @@
 	float: right;
 }
 :target {
-	margin-top: 1.302em; /*25px*/
+	margin-top: 1.302em;
 }
 .float-right{
     float:right;
@@ -53,7 +53,8 @@
   -ms-transform:rotate(25deg);
   -webkit-transform:rotate(25deg);
 }
-/** theme-toggle **/
+/** theme-toggle
+-------------------------------------------------- **/
 .nav .theme-toggle{
     cursor: pointer;
     width: 1.33em;
@@ -64,7 +65,8 @@
   -ms-transform:rotate(-25deg);
   -webkit-transform:rotate(-25deg);
 }
-/* page menu */
+/** page menu
+-------------------------------------------------- **/
 .nav a:hover{
     font-weight: bold;
     color: var(--content);
@@ -90,9 +92,9 @@ body:not(.dark) #sun {
 /* Footer
 -------------------------------------------------- */
 .footer {
-    margin: var(--gap-small) var(--gap) var(--gap-small) var(--gap);
+    margin: var(--gap) var(--gap) var(--gap-small) var(--gap);
     color: var(--content);
-    font-size: var(--font-size-classic); /*14px*/
+    font-size: var(--font-size-classic);
 }
 .footer span {
 }
@@ -116,19 +118,19 @@ body:not(.dark) #sun {
 /* Bouton Haut de page
 ---------------------------------------------------------------------------*/
 .top-link {
-    font-size: var(--font-size-classic); /*14px;*/
+    font-size: var(--font-size-classic);
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    bottom: 3.124em; /*60px*/
-    right: 1.562em; /*30px*/
+    bottom: 3.124em;
+    right: 1.562em;
     z-index: 99;
     background: var(--content);
-    width: 2.18em; /*42px 2.18*/
-    height: 2.18em; /*42px*/
-    padding: var(--radius); /*12px;*/
+    width: 2.18em;
+    height: 2.18em;
+    padding: var(--radius);
     color: var(--theme);
-    border-radius: calc(var(--radius)*8); /*64px;*/
+    border-radius: calc(var(--radius)*8);
     fill: currentColor;
     fill-opacity: 80%;
     transition: visibility 0.5s,
@@ -140,17 +142,20 @@ body:not(.dark) #sun {
     height: 1.33em;    
 }
 .top-link:hover{
-    width: 3em; /*42px 2.18*/
-    height: 3em; /*42px*/
+    width: 3em;
+    height: 3em;
 }
 
-/* la 404 */
+/* la 404
+-------------------------------------------------- */
 .empty-page{
     margin: var(--gap);
-    border-width: var(--border-width);
+	border: var(--border-width) solid var(--content);
     border-radius: var(--radius);
 }
-/* mobile */
+
+/* mobile
+-------------------------------------------------- */
 @media screen and (max-width: 630px) {
     .top-link{
         bottom: 5em;

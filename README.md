@@ -33,10 +33,12 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [X] bouton copier le lien. section "partage" !
 - [X] nitter tweet iframe (nitter n'autorise pas la connexion).
 
-- [ ] 404.html css (à vérifier).
+- [X] 404.html css.
 - [ ] css page de texte (à vérifier).
 - [ ] understand, clear and developp markdown syntax (à vérifier)
 - [ ] clear html (à vérif)
+- [ ] clear css (en cours)
+
 
 - [ ] .Params.image ??
 
@@ -50,7 +52,7 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 -- author (ok)
 -- headline(titre) (ok)
 - [ ]
-- [ ] clear css (end)
+
 
 
 - homepage : affichage des catégories mais pas des tags ? oui CSS
