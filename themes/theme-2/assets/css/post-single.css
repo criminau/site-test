@@ -103,7 +103,7 @@
 .post-content p a {
     text-decoration: underline;
     text-decoration-color: var(--content);
-    margin: var(--gap-small) var(--gap-small) 0 var(--gap-small);
+    margin: var(--gap-small) 0 var(--gap-small) 0 ;
 }
 .post-content p a:hover{
     font-weight: bolder;
