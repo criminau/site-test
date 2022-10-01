@@ -9,7 +9,6 @@
 
 /** header **/
 .post-header {
-    margin-bottom: var(--gap);
     display: flex;
     flex-direction: column;
 }
@@ -44,12 +43,12 @@
 /** cover **/
 .entry-cover{
     text-align: center;
-    margin-bottom: var(--gap);
+    margin: var(--gap) 0 var(--gap) 0;
 }
 .entry-cover img{
     border-radius: var(--radius);
     max-height: 15.625em;
-    /*max-width: 31.25em;*/
+    max-width: 100%;
     width: auto;
     height: auto;
 }
@@ -103,25 +102,15 @@
 .post-content p a:hover{
     font-weight: bolder;
 }
-/* ET (en plus) sur tablette ou smartphone, ajout d'un espace -> Tap targets are not sized appropriately */
-@media screen and (max-width: 630em) {/*700px*/
-.post-content p a{
-    padding-bottom: var(--gap-small); /*8px*/
-}
-}
-
 .post-content a code {
     margin: auto 0;
     border-radius: 0;
     box-shadow: 0 calc(var(--border-width)*(-1)) 0 var(--content) inset;
 }
-/* here */
 .post-content del {
     text-decoration: none;
-    background: linear-gradient(to right, var(--content) 100%, transparent 0) 0 50% / 1px 1px repeat-x;
-    background-color: red;
+    background: linear-gradient(to right, var(--content) 100%, transparent 0) 0 50% / 0.052em 0.052em repeat-x;
 }
-
 .post-content p,
 .post-content ul,
 .post-content ol,
@@ -280,12 +269,6 @@
 .post-content blockquote.twitter-tweet p{
     padding: 0;
 }
-/* mobile */
-@media screen and (max-width: 630px) {
-    .post-content blockquote p{
-        padding: 0 calc(var(--gap)/2);
-    }
-}
 /* end blockquote */
 
 .post-content hr {
@@ -404,13 +387,6 @@
 }
 
 
-@media screen and (max-width: 600px) {
-    .post-content blockquote {
-        margin: 0 calc(var(--gap) * -1);
-        padding: 0 1.093em; /*21px*/
-    }
-}
-
 /* Shortcodes Start */
 
 /* iframepdf.html */
@@ -479,7 +455,7 @@
 .book-columns div {
     margin: 0.2604em; /*5px;*/
     min-width: 5.208em; /*100px*/
-    padding: 1px;
+    padding: 0.052em; /*1px*/
     text-align: left;
 }
 
@@ -488,22 +464,22 @@
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    margin: 7px;
-    padding: 8px 16px;
+    margin: 0.3645em;/*7px*/
+    padding: 0.4166em 0.8333em; /*8px 16px*/
     text-align: center;
     transition-duration: 0.4s;
     color: var(--content);
-    font-size: 14px;
-    line-height: 34px;
+    font-size: 0.7291; /*14px*/
+    line-height: 1.77em; /*34px*/
     background: var(--theme);
     border-radius: var(--radius);
-    border: 2px solid var(--content);
+    border: calc(var(--border-width)*2) solid var(--content);
 }
 .sample-btn:hover{
     background: var(--content);
     color: var(--theme );
     font-weight: bolder;
-    border: 2px solid var(--theme);
+    border: calc(var(--border-width)*2) solid var(--theme);
     border-radius: var(--radius);
 }
 
@@ -512,7 +488,7 @@
 	margin-top: 0.5208em; /*10px*/
 	margin-bottom: 0.5208em;
 	overflow:hidden;
-	padding-bottom:56.25%;
+	padding-bottom: 56.25%;
 	position:relative;
 	height:0;
 }
@@ -533,12 +509,12 @@
 /* abbr, sub, sup, kbd, mark
 --------------------------------------------------------- */
 .post-single kbd {
-    border-radius: 2px;
-    padding: 5px;
-    border: 1px solid var(--content);
+    border-radius: calc(var(--radius)/4); /*2px*/
+    padding: 0.2604em; /*5px;*/
+    border: var(--border-width) solid var(--content);
 }
 .post-single kbd kbd{
-    padding: 2px;
+    padding: 0.104em; /*2px*/
 }
 
 /* boutton copier dans le code
@@ -551,13 +527,13 @@
     top: 3%;
     right: 5%;
     border: 0;
-    border-radius: 4px;
-    padding: 1px;
+    border-radius: calc(var(--radius)/2); /*4px*/
+    padding: 0.052em; /*1px*/
     font-size: 0.8em;
     line-height: 1.8;
     color: var(--hljs-color);
     opacity: 0.7;
-    min-width: 55px;
+    min-width: 2.8646em; /*55px*/
     text-align: center;
     cursor:pointer;
     font-weight: 700;
@@ -584,20 +560,36 @@ a.footnote-return:hover {
 }
 
 /* Mobile */
-/* écran < 600 */
-@media screen and (max-width: 600px) {
-  .book-columns {
-      margin-left: 2.5px;
-      margin-right: 2.5px;
-  }
-  .book-columns div {
-      margin: 2.5px;
-      min-width: 50%;
-      padding: 1px;
-      text-align: left;
-  }
-}
-/* mobile */
+/* écran < 630 */
 @media screen and (max-width: 630px) {
-
+    .book-columns {
+        margin-left: 0.1302em; /*2.5px*/
+        margin-right: 0.1302em; /*2.5px*/
+    }
+    .book-columns div {
+        margin: 0.1302em; /*2.5px*/
+        min-width: 50%;
+        padding: 0.052em; /*1px*/
+        text-align: left;
+    }
+    .post-content blockquote {
+        padding: 0 1.093em; /*21px*/
+    }
+    .post-content blockquote p{
+        padding: 0 calc(var(--gap)/2);
+        background-color: red;
+    }
+    .post-content figure.left{
+        float: none;
+        margin: 0;
+        max-width: 100%;
+    }
+    .post-content figure.right{
+        float: none;
+        margin: 0;
+        max-width: 100%;
+    }
+    .post-content p a{
+        padding-bottom: var(--gap-small); /*8px*/
+    }
 }

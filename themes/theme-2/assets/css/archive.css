@@ -57,7 +57,7 @@
     color: var(--content);
     font-size: 0.77rem;/*14px*/
 }
-@media (max-width: 44.44rem) { /*800px*/
+@media (max-width: 800px) { /*800px*/
     .archive-month {
         flex-direction: column;
     }

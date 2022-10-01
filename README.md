@@ -28,15 +28,18 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [X] responsive search.
 - [X] préparation des thèmes, tags et séries.
 - [X] vimeo responsive shortcode + youtube work.
+- [X] css archives.
+- [X] iteroni vidéo iframe.
+- [X] bouton copier le lien. section "partage" !
+- [X] nitter tweet iframe (nitter n'autorise pas la connexion).
+
+- [ ] 404.html css (à vérifier).
+- [ ] css page de texte (à vérifier).
+- [ ] understand, clear and developp markdown syntax (à vérifier)
+- [ ] clear html (à vérif)
 
 - [ ] .Params.image ??
-- [ ] clear markdown syntax
-- [ ] css page de texte
-- [ ] css archives (à vérifier)
-- [ ] font-size (em) + css (en cours)
-- [ ] bouton partager. section "partage" !
-- [ ] iteroni vidéo iframe
-- [ ] nitter tweet iframe (nitter n'autorise pas la connexion)
+
 - [ ] Opt out FLoC ??
 - [ ] s'engager dans les outils de recherche et d'affichage des taxonomies
 - [ ] préparation section : note ?
@@ -48,7 +51,6 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 -- headline(titre) (ok)
 - [ ]
 - [ ] clear css (end)
-- [ ] clear html (en cours)
 
 
 - homepage : affichage des catégories mais pas des tags ? oui CSS

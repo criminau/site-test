@@ -19,7 +19,7 @@
 	float: right;
 }
 :target {
-	margin-top: 25px;
+	margin-top: 1.302em; /*25px*/
 }
 .float-right{
     float:right;
@@ -144,6 +144,12 @@ body:not(.dark) #sun {
     height: 3em; /*42px*/
 }
 
+/* la 404 */
+.404{
+    margin: var(--gap);
+    border-width: var(--border-width);
+    border-radius: var(--radius);
+}
 /* mobile */
 @media screen and (max-width: 630px) {
     .top-link{
