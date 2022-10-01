@@ -27,6 +27,7 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [X] responsive et correction du html home-info.
 - [X] responsive search.
 - [X] préparation des thèmes, tags et séries.
+- [X] vimeo responsive shortcode + youtube work.
 
 - [ ] .Params.image ??
 - [ ] clear markdown syntax
@@ -35,7 +36,7 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [ ] font-size (em) + css (en cours)
 - [ ] bouton partager. section "partage" !
 - [ ] iteroni vidéo iframe
-- [ ] nitter tweet iframe ? citation
+- [ ] nitter tweet iframe (nitter n'autorise pas la connexion)
 - [ ] Opt out FLoC ??
 - [ ] s'engager dans les outils de recherche et d'affichage des taxonomies
 - [ ] préparation section : note ?

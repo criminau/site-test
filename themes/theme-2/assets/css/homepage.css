@@ -8,7 +8,8 @@
     margin-left: var(--gap);
     margin-top: var(--gap);
     margin-right: var(--gap);
-    width: var(--main-width);
+    max-width: var(--main-width);
+    width: auto;
 }
 .home-info .entry-header {
     overflow: hidden;
@@ -34,7 +35,8 @@
 /** introducart **/
 .introducart{
     margin: var(--gap);
-    width: var(--main-width);
+    max-width: var(--main-width);
+    width: auto;
     padding: calc(var(--gap)/3);
     border: var(--border-width) solid var(--content);
     cursor: pointer;
@@ -50,6 +52,7 @@
 .post-entry {
     position: relative;
     width: var(--main-width);
+    width: auto;
     background: var(--theme);
     border-radius: var(--radius);
     border-style: var(--border-width) solid var(--content);
@@ -77,11 +80,11 @@
 .post-entry-content-right {
     text-align: left;
     vertical-align: top;
-    max-width: var(--main-width); /*70%*/
-    display: flex;
+    max-width: 50%; /*70%*/
     flex-direction: column;
     row-gap: var(--gap);
     margin: 0 0 0 var(--gap);
+
     
 }
 .entry-header h2 {
@@ -93,8 +96,9 @@
 }
 .entry-content {
     color: var(--content);
-    font-size: var(--font-size-classic); /*14px*/
-    word-wrap: break-word;
+    font-size: var(--font-size-classic); /*14px
+    word-wrap: break-word;*/
+        white-space: normal;
 }
 .entry-taxonomies {
     color: var(--content);
@@ -122,8 +126,9 @@
 /* pagination */
 .pagination {
     display: flex;
-    width: var(--main-width);
-    margin: 0 0 0 var(--gap);
+    max-width: var(--main-width);
+    width: auto;
+    margin: 0 var(--gap) 0 var(--gap);
 }
 .pagination a {
     color: var(--theme);
@@ -141,16 +146,20 @@
 }
 /* mobile */
 @media screen and (max-width: 630px) {
-    .post-entry div, .post-entry img{
+    .post-entry div{
         display: inline-flex;
         justify-content: center;
         flex-wrap: wrap;
         row-gap: var(--gap);
+        width: 100%;
+    }
+    .post-entry img{
         width: 100%; /* for img */
     }
     .post-entry-content-right{
         margin: 0;
         padding-top: var(--gap);
+        max-width: 100%;
     }
     .pagination{
         margin: 0 var(--gap) 0 var(--gap);

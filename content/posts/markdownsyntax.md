@@ -17,10 +17,12 @@ keyword: "Markdown syntax, copy button, figure, details, expand, columns, tabs, 
 pdfname: "markdown-syntax"
 ---
 
-This article offers basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS like figure.
-<!--more-->
+Cet article offre la base de la syntaxe markdown, il peut être utilisé pour les fichiers de votre contenu sur hugo, il permet la personnalisation via le css du langage html produit.
+Cet article me permet de tester de nouvelles configurations de manière étendue.
 
-PS: Le document PDF est complet sans modification.
+This article offers basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS like figure.
+
+PS: Le document PDF est complet d'origine, depuis des modifications ont été apporté.
 
 [Visualiser la page sans formatage via github](https://raw.githubusercontent.com/criminau/site/master/content/posts/markdownsyntax.md)
 
@@ -275,6 +277,20 @@ Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the ses
 **twitter with conversation ?**  
 
 {{< tweet user="NASA" id="495719809695621121" >}}
+
+## nitter
+
+nitter n'autorise pas la connexion.
+
+## iteroni
+
+ça fonctionne à merveille.
+
+{{< iteroni "falFFuZEPd4" >}}
+
+{{< iteroni "-R0UYHS8A_A" >}}
+
+deux pour le plaisir
 
 ## vimeo
 

@@ -6,7 +6,8 @@
 }
 .archive-list-main{
     margin: var(--gap);
-    width: var(--main-width);
+    max-width: var(--main-width);
+    width: auto;
 }
 .archive-posts {
     width: 100%;

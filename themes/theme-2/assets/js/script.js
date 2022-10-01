@@ -55,6 +55,9 @@ https://www.fiznool.com/blog/2018/09/14/adding-click-to-copy-buttons-to-a-hugo-p
 })();
 /***** FIN Bouton copier/coller */
 
+/**** bouton copier/coller le lien de la page ****/
+
+/**** fin copier/coller le lien de la page ****/
 /***** bouton (ancien lien dans le pied de page) ***/
 
 var mybutton = document.getElementById("tl2");
