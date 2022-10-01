@@ -4,6 +4,7 @@
     margin: var(--gap);
     max-width: var(--main-width);
     width: auto;
+    line-height: 1.5em;
 }
 
 /** header **/
@@ -28,6 +29,7 @@
     font-size: var(--font-size-classic); /*14px*/
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 .post-meta a.pdf-link-post-single:hover{
     font-weight: bold;
@@ -40,20 +42,21 @@
 }
 
 /** cover **/
-.post-single .img-cover{
-    box-shadow: 0 var(--border-width) 0 var(--content);
-    margin-bottom: var(--gap);
+.entry-cover{
     text-align: center;
-    vertical-align: center;
+    margin-bottom: var(--gap);
+}
+.entry-cover img{
     border-radius: var(--radius);
-    max-height: 15.625em; /*15.625vw */
-    max-width: 15.625em;
+    max-height: 15.625em;
+    /*max-width: 31.25em;*/
     width: auto;
     height: auto;
 }
 .cover-caption{
-  font-size: 0.7291em; /*14*/
-  color: var(--content);
+    font-size: 0.7291em;
+    color: var(--content);
+    margin-top: var(--gap-small);
 }
 /** end cover */
 
@@ -95,6 +98,7 @@
 .post-content p a {
     text-decoration: underline;
     text-decoration-color: var(--content);
+    margin: var(--gap-small) var(--gap-small) 0 var(--gap-small);
 }
 .post-content p a:hover{
     font-weight: bolder;
@@ -102,7 +106,7 @@
 /* ET (en plus) sur tablette ou smartphone, ajout d'un espace -> Tap targets are not sized appropriately */
 @media screen and (max-width: 630em) {/*700px*/
 .post-content p a{
-    padding-bottom: 0.4166em; /*8px*/
+    padding-bottom: var(--gap-small); /*8px*/
 }
 }
 
@@ -111,7 +115,7 @@
     border-radius: 0;
     box-shadow: 0 calc(var(--border-width)*(-1)) 0 var(--content) inset;
 }
-
+/* here */
 .post-content del {
     text-decoration: none;
     background: linear-gradient(to right, var(--content) 100%, transparent 0) 0 50% / 1px 1px repeat-x;
@@ -258,17 +262,32 @@
     border-radius: 0;
     overflow-x: auto;
 }
+
+/* blockquote */
 .post-content blockquote {
-    margin: 0 calc(var(--gap) * -1);
-    padding: 0 1.666em; /*32px*/
     border-inline-start: calc(var(--border-width)*2) solid var(--content);
+    padding: 0;
+    margin: 0;
+}
+.post-content blockquote p{
+    padding: 0 var(--gap);
 }
 .post-content blockquote.twitter-tweet{
-    margin: 0 calc(var(--gap) * -1);
-    padding: 0 1.666em; /*32px*/
     border-inline-start: calc(var(--border-width)*2) solid var(--content);
     margin-bottom: var(--content-gap);
+    padding: 0 var(--gap);
 }
+.post-content blockquote.twitter-tweet p{
+    padding: 0;
+}
+/* mobile */
+@media screen and (max-width: 630px) {
+    .post-content blockquote p{
+        padding: 0 calc(var(--gap)/2);
+    }
+}
+/* end blockquote */
+
 .post-content hr {
     margin: var(--gap) 0 var(--gap);
     height: calc(var(--border-width)*2);
@@ -388,8 +407,7 @@
 @media screen and (max-width: 600px) {
     .post-content blockquote {
         margin: 0 calc(var(--gap) * -1);
-        padding: 0 21px;
-        background-color: red;
+        padding: 0 1.093em; /*21px*/
     }
 }
 
@@ -410,13 +428,13 @@
     max-width: 100%;
     height: auto;
     margin: 0;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 1.302em; /*25px*/
+    margin-bottom: 1.302em;
     text-align: center;
 }
 
 .post-content figure p{
-    font-size: .8em;
+    font-size: 0.8em;
     font-style: italic;
 }
 
@@ -424,55 +442,43 @@
     float: left;
     margin-right: 1.5em;
     max-width: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.2604em; /*5px;*/
+    margin-bottom: 0.2604em; /*5px;*/
 }
 
 .post-content figure.right{
     float: right;
     margin-left: 1.5em;
     max-width: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.2604em; /*5px;*/
+    margin-bottom: 0.2604em; /*5px;*/
 }
 
 .post-content figure.big{
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .post-content img.figure-img{
     display: block;
-    max-height: 300px;
-    
+    max-height: 15.625em; /*300px*/
     max-width: 100%;
     height: auto;
     width: auto;
-    /*
-    
-    max-height: 300px;
-    width: auto;
-    height: auto;
-    */
-    
     margin: auto;
-    border-radius: 4px;
+    border-radius: var(--radius);
 }
-
-
-
 
 
 /*
        < columns >
 */
 .book-columns {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 0.2604em 0 0.2604em; /*5px;*/
 }
 
 .book-columns div {
-    margin: 5px;
-    min-width: 100px;
+    margin: 0.2604em; /*5px;*/
+    min-width: 5.208em; /*100px*/
     padding: 1px;
     text-align: left;
 }
@@ -516,6 +522,7 @@
 	height:100%;
 	width:100%;
 	position:absolute;
+    border-radius: var(--radius);
 }
 
 /* vimeo.html (ok) */

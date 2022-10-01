@@ -13,7 +13,7 @@
 	 width="15.625em" alt="article sans image" >
 
 {{ else if (and .Params.cover.image .Params.cover.alt) }}
-
+<div class="entry-cover">
 {{- if $addLink }}
 <a title="{{ $alt }}" rel="noopener noreferrer" href="{{ (.Params.cover.image) | absURL }}" target="_blank">
 {{ end -}}
@@ -29,5 +29,6 @@
 {{ with .Params.cover.caption }}<p class="cover-caption">{{ . | markdownify }}</p>{{- end }}
 {{- end }}
 
+</div>
 {{ end }}
 {{- end -}}{{/* End context */}}

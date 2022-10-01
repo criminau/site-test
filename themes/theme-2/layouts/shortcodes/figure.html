@@ -9,7 +9,7 @@
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- end -}}
     <img src="{{ $src }}" class="figure-img"
-		 width="auto" height="auto" 
+		 width="31.25em" height="15.625em" 
 		{{- if or (.Get "alt") (.Get "caption") }}
 		alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
 		title="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
