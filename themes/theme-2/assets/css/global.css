@@ -145,7 +145,7 @@ body:not(.dark) #sun {
 }
 
 /* la 404 */
-.404{
+.empty-page{
     margin: var(--gap);
     border-width: var(--border-width);
     border-radius: var(--radius);
