@@ -58,10 +58,9 @@
     max-width: var(--main-width);
     width: auto;
     background: var(--theme);
-    border-radius: var(--radius);
-    border-style: var(--border-width) solid var(--content);
     transition: transform 0.1s;
     margin: 0 var(--gap) var(--gap) var(--gap);
+    padding: 0.2083em 0.2083em 0.2083em 0.2083em;
 }
 .post-entry div{
     display: inline-flex;
@@ -126,7 +125,9 @@
     right: 0;
     top: 0;
     bottom: 0;
-    box-shadow: 0 var(--border-width) 0 var(--content);
+    box-shadow: 0 0 calc(var(--border-width)*5) var(--content);
+    border-radius: var(--radius);/*
+    border-style: calc(var(--border-width)*5) solid var(--content);*/
 }
 
 /* end of post-entry */

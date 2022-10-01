@@ -150,8 +150,9 @@ body:not(.dark) #sun {
 -------------------------------------------------- */
 .empty-page{
     margin: var(--gap);
-	border: var(--border-width) solid var(--content);
-    border-radius: var(--radius);
+    padding: calc(var(--gap)*4);
+    max-width: var(--main-width);
+    min-height: var(--main-width);
 }
 
 /* mobile
@@ -159,5 +160,8 @@ body:not(.dark) #sun {
 @media screen and (max-width: 630px) {
     .top-link{
         bottom: 5em;
+    }
+    .footer {
+        text-align: center;
     }
 }

@@ -56,16 +56,10 @@
 
 {{- end }}
 
-{{- if gt $paginator.TotalPages 1 }}
-  <div class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" rel="prev" href="{{ $paginator.Prev.URL }}" title="Page Précédente" >« Page Précédente</a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next"  rel="next" href="{{ $paginator.Next.URL }}" title="Page Suivante">Page Suivante »</a>
-    {{- end }}
-  </div>
-{{- end }}
-
+<p class="introducart">
+	{{ $n := len $pages }}
+	{{ $n }} articles
+	{{ partial "pagination.html" $paginator }}
+</p>
 
 {{- end  }}{{- /* end main */ -}}

@@ -32,14 +32,14 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [X] iteroni vidéo iframe.
 - [X] bouton copier le lien. section "partage" !
 - [X] nitter tweet iframe (nitter n'autorise pas la connexion).
-
 - [X] 404.html css.
-- [ ] css page de texte (à vérifier).
-- [ ] understand, clear and developp markdown syntax (à vérifier)
-- [ ] clear html (à vérif)
-- [ ] clear css (en cours)
+- [X] css page de texte.
+- [X] understand, clear and developp markdown syntax.
+- [X] clear html.
+- [X] clear css.
 
 
+- [ ] déployer iteroni à la place de youtube qui bouffe de la ressource.
 - [ ] .Params.image ??
 
 - [ ] Opt out FLoC ??
@@ -54,6 +54,7 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [ ]
 
 
+- les brouillons ne sont pas disponibles à la recherche.
 
 - homepage : affichage des catégories mais pas des tags ? oui CSS
 Thèmes -> categories

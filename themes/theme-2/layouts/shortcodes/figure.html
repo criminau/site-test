@@ -3,7 +3,6 @@
 {{- $alt := .Get "alt" -}}
 {{- $caption := .Get "caption" -}}
 
-
 <figure class="{{ $class }}" role="group">
     {{- if .Get "link" -}}
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
