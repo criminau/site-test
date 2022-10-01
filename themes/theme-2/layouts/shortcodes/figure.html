@@ -1,8 +1,15 @@
-<figure{{ with .Get "class" }} class="{{ . }}"{{ end }} role="group">
+{{- $class := .Get "class" -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $caption := .Get "caption" -}}
+
+
+<figure class="{{ $class }}" role="group">
     {{- if .Get "link" -}}
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- end -}}
-    <img src="{{ .Get "src" }}"
+    <img src="{{ $src }}" class="figure-img"
+		 width="auto" height="auto" 
 		{{- if or (.Get "alt") (.Get "caption") }}
 		alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
 		title="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"

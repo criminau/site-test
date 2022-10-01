@@ -9,7 +9,7 @@
 
 {{ if (and $.IsHome (eq .Params.cover.image .Params.cover.alt "")) }}
 
-<img itemprop="image" title="article sans image" src="{{ (.Site.Params.emptycover) | absURL }}" height="15.625em"
+<img class="img-cover" itemprop="image" title="article sans image" src="{{ (.Site.Params.emptycover) | absURL }}" height="15.625em"
 	 width="15.625em" alt="article sans image" >
 
 {{ else if (and .Params.cover.image .Params.cover.alt) }}
@@ -18,7 +18,7 @@
 <a title="{{ $alt }}" rel="noopener noreferrer" href="{{ (.Params.cover.image) | absURL }}" target="_blank">
 {{ end -}}
 {{- if $alt }}
-<img itemprop="image" title="{{ $alt }}" src="{{ (.Params.cover.image) | absURL }}" height="15.625em"
+<img class="img-cover" itemprop="image" title="{{ $alt }}" src="{{ (.Params.cover.image) | absURL }}" height="15.625em"
 	 width="15.625em" alt="{{ $alt }}" >
 {{- end }}
 	

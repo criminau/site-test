@@ -51,7 +51,7 @@
 /** post-entry **/
 .post-entry {
     position: relative;
-    width: var(--main-width);
+    max-width: var(--main-width);
     width: auto;
     background: var(--theme);
     border-radius: var(--radius);

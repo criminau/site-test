@@ -167,11 +167,11 @@ Sur les armoiries russe :
 - L'aigle portant l'écusson de Saint-Georges (patron des Slaves) terrassant le dragon (le mal); dit «Saint-Georges le Vainqueur» et orienté vers la droite.
 - L'aigle tenant dans ses serres, sceptre et orbe, représentant respectivement le pouvoir du tsar et de l’église orthodoxe.
 
-{{< figure src="https://criminau.xyz/media/armoiries-byzantine.svg.avif" alt="Armoiries Byzantine" caption="Armoiries Byzantine" >}}
+{{< figure src="https://criminau.xyz/media/armoiries-byzantine.svg.avif" alt="Armoiries Byzantine" caption="Armoiries Byzantine" class="big" >}}
 
-{{< figure src="https://criminau.xyz/media/armoiries-emp-rus.svg.avif" alt="Armoiries de l'Empire Russe" caption="Armoiries de l'Empire Russe" >}}
+{{< figure src="https://criminau.xyz/media/armoiries-emp-rus.svg.avif" alt="Armoiries de l'Empire Russe" caption="Armoiries de l'Empire Russe" class="big" >}}
 
-{{< figure src="https://criminau.xyz/media/armoiries-fed-rus.svg.avif" alt="Armoiries de la Fédération de Russie" caption="Armoiries de la Fédération de Russie" >}}
+{{< figure src="https://criminau.xyz/media/armoiries-fed-rus.svg.avif" alt="Armoiries de la Fédération de Russie" caption="Armoiries de la Fédération de Russie" class="big" >}}
 
 **On observe une suite entre les armoiries de l'Empire byzantin, du Saint Empire germanique, de l'Empire russe et de la Fédération de Russie.**
 

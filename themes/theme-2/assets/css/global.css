@@ -29,6 +29,7 @@
 .nav{
     margin: var(--gap-small) var(--gap) 0 var(--gap);
     font-size: var(--font-size-menu);
+    max-width: var(--main-width);
 }
 .nav ul{
     list-style-type: none;
