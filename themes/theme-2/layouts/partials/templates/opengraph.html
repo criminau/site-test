@@ -3,7 +3,10 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-<!-- Image -->
+<!-- Image 
+prudence l'utilisation du formet .avif ne fonctionne pas chez les réseaux sociaux. les fdp car c'est celui de google. Par exemple: webp
+fonctionne chez facebook
+-->
 {{- with (.Params.images | default .Site.Params.images) }}
 <meta name="twitter:image" content="{{ . | absURL }}"/>
 <meta property="og:image" content="{{ . | absURL }}"/>

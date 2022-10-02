@@ -26,9 +26,9 @@
   {
     "@type": "Person",
 	{{- with (.Params.author | default .Site.Params.author) }}
-    "name": {{ . }}
+    "name": {{ . }},
 	{{- end }}
-    "url": "{{ .Site.BaseURL }}"
+    "url": {{ .Site.BaseURL }},
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
