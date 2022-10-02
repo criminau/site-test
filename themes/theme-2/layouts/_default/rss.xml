@@ -50,7 +50,7 @@
 
 {{- $content := replaceRE "a href=\"(#.*?)\"" (printf "%s%s%s" "a href=\"" .Permalink "$1\"") .Content -}}
 {{- $content = replaceRE "img src=\"(.*?)\"" (printf "%s%s" "img src=\"" "$1\"") $content -}}
-      <description>{{ $content | html }}</description>
+      <description>{{ .Summary | html }}</description>
 
     <!-- Start Image -->
 	{{- if .Params.images -}}
@@ -62,7 +62,6 @@
 	{{ end }}{{- else -}}
 	{{- end -}}
 	<!-- end image-->
-
 
     </item>
     {{ end }}
