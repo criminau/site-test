@@ -59,7 +59,6 @@
 	{{$image := readFile $image_location }}
 	{{$len := len $image}}
 	<enclosure url="http://criminau.xyz/{{.}}" length="{{$len}}" type="image/avif" />
-	<media:content url="http://criminau.xyz/{{.}}" type="image/avif" medium="image"> </media:content>
 	{{ end }}{{- else -}}
 	{{- end -}}
 	<!-- end image-->
