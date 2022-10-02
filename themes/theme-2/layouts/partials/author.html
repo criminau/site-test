@@ -6,7 +6,7 @@
 {{- else }}
 <p class="post-meta-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
 	<span itemprop="name">{{- $author }} </span>
-	<span itemprop="url" id="no-display">{{ .Permalink | safeHTML }}</span>
+	<span itemprop="url" id="no-display">{{ .Site.BaseURL }}</span>
 </p>
 
 {{- end }}
