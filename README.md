@@ -37,84 +37,23 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [X] understand, clear and developp markdown syntax.
 - [X] clear html.
 - [X] clear css.
+- [X] schema article : Rich content.
 
-- [ ] Rich content
+- [ ] 
 - [ ] déployer iteroni à la place de youtube qui bouffe de la ressource.
 - [ ] .Params.image ?? -> RSS
-- [ ] RSS image
+- [ ] RSS image (en cours)
 - [ ] Opt out FLoC ??
 - [ ] s'engager dans les outils de recherche et d'affichage des taxonomies
 - [ ] préparation section : note ?
 - [ ] site responsive avec css mobile (720/1320)
-- [*] schema article : author + image(ok) + headline. post single. [A confirmer]
--- image (ok)
-<meta itemprop="image" content="/some/url/to/an/image.gif" /> (si besoin)
--- author (ok)
--- headline(titre) (ok)
+
 - [ ]
 
 
 - les brouillons ne sont pas disponibles à la recherche.
+- déployer iteroni à la place de youtube qui bouffe de la ressource.
 
 - homepage : affichage des catégories mais pas des tags ? oui CSS
 Thèmes -> categories
 
-
-un grand caré (post-entry), dedens on y fou 2 carré &mg a guahce et 1 a droite texte. on y fou img a gauche le reste a droite. double carré avec x3 dedans.
-
-https://cloudcannon.com/community/learn/hugo-tutorial/taxonomies/
-title: My Blog Post
-categories: [development, publishing]
-tags: [hugo,content,static site generator]
-
-
-.Site.GetPage for Taxonomies
-
-Because taxonomies are lists, the .GetPage function can be used to get all the pages associated with a particular taxonomy term using a terse syntax. The following ranges over the full list of tags on your site and links to each of the individual taxonomy pages for each term without having to use the more fragile URL construction of the “List All Site Tags” example above:
-links-to-all-tags.html
-
-{{ $taxo := "tags" }}
-<ul class="{{ $taxo }}">
-    {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
-        {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Title}}</a></li>
-        {{ end }}
-    {{ end }}
-</ul>
-
-
-
-layouts/partials/all-taxonomies.html
-
-<section>
-    <ul id="all-taxonomies">
-        {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
-            {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
-                <li><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
-                    <ul>
-                        {{ range $key, $value := $taxonomy }}
-                            <li>{{ $key }}</li>
-                            <ul>
-                                {{ range $value.Pages }}
-                                    <li hugo-nav="{{ .RelPermalink}}">
-                                        <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
-                                    </li>
-                                {{ end }}
-                            </ul>
-                        {{ end }}
-                    </ul>
-                </li>
-            {{ end }}
-        {{ end }}
-    </ul>
-</section>
-
-Actor                    <- Taxonomy
-    Bruce Willis         <- Term
-        The Sixth Sense  <- Value
-        Unbreakable      <- Value
-        Moonrise Kingdom <- Value
-        
-    {{ range (.GetTerms "tags") }}
-    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-    {{ end }}

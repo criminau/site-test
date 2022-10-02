@@ -11,7 +11,7 @@ theme: theme-2
 enableRobotsTXT: false
 buildFuture: false
 buildExpored: false
-buildDraft: true
+buildDraft: false
 
 # Performance
 minify:
