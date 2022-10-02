@@ -5,7 +5,7 @@
   "@type": "BlogPosting",
   "headline": "{{ .Title | plainify }}",
   "name": "{{ .Title | plainify }}",
-  "description": {{ .Summary | plainify | truncate 180 | safeHTML }},
+  "abstract": {{ .Summary | plainify | truncate 180 | safeHTML }},
   "keywords": [
     {{ .Params.keyword | default .Site.Params.keyword }}
   ],
