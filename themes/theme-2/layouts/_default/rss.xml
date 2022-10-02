@@ -58,7 +58,7 @@
 	{{ $image_location := printf "/static/%s" . }}
 	{{$image := readFile $image_location }}
 	{{$len := len $image}}
-	<enclosure url="http://criminau.xyz/{{.}}" length="{{$len}}" type="image/png" />
+	<enclosure url="http://criminau.xyz/{{.}}" length="{{$len}}" type="image/avif" />
 	{{ end }}{{- else -}}
 	{{- end -}}
 	<!-- end image-->
