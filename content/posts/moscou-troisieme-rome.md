@@ -134,9 +134,10 @@ L'orthodoxie est différente du catholicisme qui a perdu la connexion de Dieu av
 
 Communiquer la vérité : les symboles de leur Foi doivent être adoptés.
 
-Conscience des troupes engagés en Ukraine (hisse les bannières sur leurs véhicules de combat et leurs équipement).
+Conscience des troupes engagés en Ukraine (hisse les bannières sur leurs véhicules de combat et leurs équipements).
 
-Transmettre la conscience sacrée de la signification existentielle de cette guerre, qui leur ait imposée, cette guerre sacrée. J'ai mentionné a mainte reprise « l'appui » qu'apporte cette guerre sacrée, il se confirme et permet cette prise de conscience, et va faire chavirer le monde russe dans un nouveau monde, une guerre sacrée et totale. L'humanité aura alors une dette envers les russes. Cette prise de conscience doit s'enclencher à grande échelle, selon Glazyev S. « Le personnel militaire doit clairement comprendre qu'il se bat pour la mère patrie qui l'aime, le valorise et protège sa famille et ses valeurs. »
+Transmettre la conscience sacrée de la signification existentielle de cette guerre, qui leur ait imposée, cette guerre sacrée. J'ai mentionné a mainte reprise « l'appui » qu'apporte cette guerre sacrée, il se confirme et permet cette prise de conscience, et va faire chavirer le monde russe dans un nouveau monde, une guerre sacrée et totale. L'humanité aura alors une dette envers les russes. Cette prise de conscience doit s'enclencher à grande échelle, selon Glazyev S. :
+> « Le personnel militaire doit clairement comprendre qu'il se bat pour la mère patrie qui l'aime, le valorise et protège sa famille et ses valeurs. »
 
 **Tous les propos où volontés révèlent une position défensive : Se protéger d'une agression spirituelle et existentielle subit et non désirée.**
 

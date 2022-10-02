@@ -3,14 +3,11 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-<!-- Image OK -->
-{{- if .Params.images -}}
-{{ with $.Params.images }}
+<!-- Image -->
+{{- with (.Params.images | default .Site.Params.images) }}
 <meta name="twitter:image" content="{{ . | absURL }}"/>
-{{ end }}{{ else -}}
-{{- with $.Site.Params.images -}}
-<meta property="og:image" content="{{ index . 0 | absURL }}"/>
-{{ end }}{{- end }}
+<meta property="og:image" content="{{ . | absURL }}"/>
+{{- end }}
 <!-- end image-->
 
 

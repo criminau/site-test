@@ -3,7 +3,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": {{ .Title | plainify}},
+  "headline": "{{ .Title | plainify }}",
   "name": "{{ .Title | plainify }}",
   "description": {{ .Summary | plainify | truncate 180 | safeHTML }},
   "keywords": [
@@ -22,12 +22,14 @@
   {{ end }}
   "datePublished": {{ .PublishDate.Format "2006-01-02" }},
   "dateModified": {{ .Lastmod.Format "2006-01-02" }},
-  {{- with (.Params.author | default .Site.Params.author) }}
   "author":
   {
     "@type": "Person",
+	{{- with (.Params.author | default .Site.Params.author) }}
     "name": {{ . }}
-  }, {{- end }}
+	{{- end }}
+    "url": "{{ .Site.BaseURL }}"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": {{ .Permalink | safeHTML }}

@@ -38,10 +38,10 @@ En savoir plus :   <https://criminau.xyz/apropos/>
 - [X] clear html.
 - [X] clear css.
 
-
+- [ ] Rich content
 - [ ] déployer iteroni à la place de youtube qui bouffe de la ressource.
-- [ ] .Params.image ??
-
+- [ ] .Params.image ?? -> RSS
+- [ ] RSS image
 - [ ] Opt out FLoC ??
 - [ ] s'engager dans les outils de recherche et d'affichage des taxonomies
 - [ ] préparation section : note ?
