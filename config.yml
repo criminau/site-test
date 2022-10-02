@@ -1,4 +1,4 @@
-baseURL: 'https://site-test-criminau.netlify.app/'
+baseURL: "https://site-test-criminau.netlify.app/"
 relativeURLs: true
 uglyURLs: true
 title: "Journal Subversif"
@@ -15,7 +15,7 @@ buildDraft: true
 
 # Performance
 minify:
- minifyOutput: true
+ minifyOutput: false
 
 # Preparing search option
 outputs:

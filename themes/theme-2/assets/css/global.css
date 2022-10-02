@@ -24,6 +24,9 @@
 .float-right{
     float:right;
 }
+#no-display{
+    display: none;
+}
 /* Navigation
 -------------------------------------------------- */
 .nav{
