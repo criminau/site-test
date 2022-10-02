@@ -4,7 +4,7 @@
 {{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}") ) }}
 {{- (delimit $author ", " ) }}
 {{- else }}
-<p class="post-meta-author" itemprop="author" itemtype="person">{{- $author }}</p>
+<p class="post-meta-author" itemprop="author">{{- $author }}</p>
 <a id="no-display" itemprop="url">{{ .Permalink | safeHTML }}</a>
 {{- end }}
 {{- end -}}
