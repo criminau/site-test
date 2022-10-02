@@ -4,7 +4,11 @@
 {{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}") ) }}
 {{- (delimit $author ", " ) }}
 {{- else }}
-<p class="post-meta-author" itemscope itemprop="author" itemtype="http://schema.org/Person">{{- $author }}</p>
-<span itemprop="url" id="no-display">{{ .Permalink | safeHTML }}</span>
+<p class="post-meta-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+	<span itemprop="name">{{- $author }} </span>
+	<span itemprop="type" id="no-display">person</span>
+	<span itemprop="url" id="no-display">{{ .Permalink | safeHTML }}</span>
+</p>
+
 {{- end }}
 {{- end -}}
